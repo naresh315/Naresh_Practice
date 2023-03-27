@@ -46,7 +46,7 @@ class Student  {
 }
 
 //Complete the code
-public class ComparatorTest
+public class AccountComparatorDemo
 {
 	public static void main(String[] args){
 		Scanner in = new Scanner(System.in);
