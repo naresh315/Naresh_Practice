@@ -40,8 +40,8 @@ public class ComparatorDemCHATGPT {
     public static void main(String[] args) {
         List<Student1> Student1s = new ArrayList<>();
         Student1s.add(new Student1(1, "Alice", 3.8));
-        Student1s.add(new Student1(2, "Bob", 3.9));
-        Student1s.add(new Student1(3, "Charlie", 3.7));
+        Student1s.add(new Student1(2, "David", 3.9));
+        Student1s.add(new Student1(3, "David", 3.7));
         Student1s.add(new Student1(4, "David", 3.9));
 
         Collections.sort(Student1s,Collections.reverseOrder());

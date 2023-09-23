@@ -4,6 +4,9 @@ import java.util.Arrays;
 
 public class MergedMy {
 	public static void main(String[] args) {
+		int[] myArray= {10,1,2,1,0};
+		System.out.println(Arrays.toString(Arrays.copyOfRange(myArray, 0, 4)));
+		
 		int[] array= {10,110,1110,11110,1,222222222,3,4,5,6,222222222};
 		mergeSort(array);
 		System.out.println(Arrays.toString(array));
@@ -21,22 +24,23 @@ public class MergedMy {
 			merge(array,left,right);
 		}
 	}
-   private static void merge(int[] array, int[] left, int[] right) {
-		 int i =0,j=0,k=0;
-		 while(i< left.length && j < right.length) {
-			 if(left[i] <=right[j]) {
-				 array[k++] = left[i++];
-			 }else {
-				 array[k++] = right[j++]; 
-			 }
-		 }
-			while (i < left.length) {
-			 
-					array[k++] = left[i++];
-			}
-			while (j < right.length) {
+
+	private static void merge(int[] array, int[] left, int[] right) {
+		int i = 0, j = 0, k = 0;
+		while (i < left.length && j < right.length) {
+			if (left[i] <= right[j]) {
+				array[k++] = left[i++];
+			} else {
 				array[k++] = right[j++];
 			}
-   }
+		}
+		while (i < left.length) {
+
+			array[k++] = left[i++];
+		}
+		while (j < right.length) {
+			array[k++] = right[j++];
+		}
+	}
 
 }

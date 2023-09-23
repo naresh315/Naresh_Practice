@@ -1,6 +1,6 @@
 package com.programs;
 
-public class ContigeousSubarray {
+public class LargestContingeouSum {
 	public static void main(String[] args) {
 		System.out.println(((double)3/2));
 		int arrInt[] = { -1,3,4,-2,5,-7 };
